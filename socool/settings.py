@@ -14,7 +14,9 @@ BOT_NAME = 'socool'
 SPIDER_MODULES = ['socool.spiders']
 NEWSPIDER_MODULE = 'socool.spiders'
 
-
+ITEM_PIPELINES = {
+   'socool.pipelines.SaveMongoPipeline': 300,
+}
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'socool (+http://www.yourdomain.com)'
 
